@@ -1,14 +1,9 @@
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Box, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import Model from "./Model.jsx";
 
 const Scene = () => {
-  const boxRef = useRef();
-  useFrame((state, delta) => {
-   // boxRef.current.rotation.y += 0.02;
-  });
-
   return (
     <>
       <Suspense fallback={null}>

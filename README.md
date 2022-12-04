@@ -1,9 +1,20 @@
-# React Three Fiber + Vite Starter
+# Web 3D Tutorial
 
-_A simple React Three Fiber + Vite starter with an import-ready CodeSandbox config._
+_Blender to Web3D as fast as possible_
 
 ![Preview](/public/preview.gif)
 
+This repo is meant to accompany a tutorial series on Youtube that starts here: https://youtu.be/1BvLpt7egss
+
+As the course advances I'll add scripts here to make some tasks easier and grow this to be a Blender to Web toolkit.
+
+Discuss here on Discord: https://discord.gg/5rTCdzpKnj
+
+### Requirements:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [VS Code](https://code.visualstudio.com/download) , to follow along with the tutorial
+- [Blender](https://www.blender.org/download/) , We are focusing on Blender to Web
 ### Resources:
 
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/): Three.js Renderer
@@ -18,6 +29,15 @@ _A simple React Three Fiber + Vite starter with an import-ready CodeSandbox conf
 npm install
 ```
 
+### Getting Started
+
+1. Open a model in Blender you want to publish (places like [CG Trader](https://www.cgtrader.com/) are a good start)
+2. Export to `public/model.glb`
+3. open a terminal to `/src` directory
+4. run `npx gltfjsx ../public/model.glb`
+5. rename the new `Model.js` to `Model.jsx`
+6. run `npm run dev` from terminal
+7. look at what you did, tune and repeat
 ### Scripts
 
 ```
