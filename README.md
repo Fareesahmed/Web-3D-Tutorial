@@ -2,7 +2,7 @@
 
 _Blender to Web3D as fast as possible_
 
-![Preview](/public/preview.gif)
+![Preview](/public/preview.png)
 
 This repo is meant to accompany a tutorial series on Youtube that starts here: https://youtu.be/1BvLpt7egss
 
@@ -17,6 +17,7 @@ Discuss here on Discord: https://discord.gg/5rTCdzpKnj
 - [Blender](https://www.blender.org/download/) , We are focusing on Blender to Web
 ### Resources:
 
+- [Flying Apartment Asset](https://www.cgtrader.com/3d-models/exterior/cityscape/cyberpunk-flying-apartment)
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/): Three.js Renderer
 - [Drei](https://github.com/pmndrs/drei): React Three Fiber Helpers
 - [Three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene): 3D Engine
