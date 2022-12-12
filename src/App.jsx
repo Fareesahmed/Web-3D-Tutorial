@@ -17,7 +17,7 @@ const Scene = () => {
 
 const App = () => {
   return (
-    <Canvas>
+    <Canvas shadows gl={{ physicallyCorrectLights: true, toneMappingExposure:.001 }}>
       {/* REMOVE ORBIT CONTROLS TO FORCE THE CAMERA VIEW */}
       <OrbitControls />
       <Scene>
