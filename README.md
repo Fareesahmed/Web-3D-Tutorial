@@ -47,5 +47,40 @@ npm run build
 npm run preview
 npm run sandbox
 ```
-### CodeSandbox
-To create a sandbox from this starter, [import your repository URL](https://codesandbox.io/dashboard/repositories) (this repo works too), or [fork this template](https://codesandbox.io/s/react-three-fiber-vite-starter-r1tgld).
+### detailed notes for Blender -> Web3D
+
+#### Models
+
+1. Import your model (I got an stl from printables.com)
+2. Models CAN be created progmatically if that makes sense to do.
+3. Models can come from multiple files
+4. test things with gltf export NOT glb
+5. Split parts
+   1. by whats separate
+   2. by materials
+   3. select faces + more technique
+6. Reduce geometry
+   1. Remove unnecessary components for 3d printing
+   2. highlight and dissolve unnecessary vertices
+   3. limited dissolve intricate parts
+7. join parts and set origins logically for use later
+8. rename parts to what's easy to recognize
+9. parent objects based on what needs to move together
+10. add materials (detailed separately)
+11. add lights (detailed separately)
+
+
+#### Materials
+
+1. Materials in Blender
+2. UVs
+   1. bulk script on Gist
+3. GLTF export materials
+4. BSDF Material
+5. Baking Materials
+6. Materials in R3F
+   1. Special materials
+   2. Cloning
+   3. Modifying
+   4. Unique capabilities
+
