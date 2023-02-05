@@ -1,6 +1,7 @@
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
+import { Sky, Cloud, Bvh, OrbitControls, Environment, Lightformer } from "@react-three/drei";
+import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { Model, Instances} from "./Model.jsx";
 
 const Scene = () => {
@@ -10,22 +11,27 @@ const Scene = () => {
           <Instances>
             <Model />
           </Instances>
-          <Environment preset={'sunset'} background={true} />
+          <EffectComposer multisampling={8}>
+            <Bloom kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.4} intensity={1} />
+          </EffectComposer>
       </Suspense>
       {/* REPLACE THIS LIGHT AS NEEDED IT'S A GOOD START */}
-      <ambientLight intensity={1}/>
+      <ambientLight intensity={3}/>
     </>
   );
 };
 
 const App = () => {
   return (
-    <Canvas shadows gl={{ physicallyCorrectLights: true, toneMappingExposure:.1 }}>
+    <Canvas shadows gl={{ physicallyCorrectLights: true, toneMappingExposure:.02 }}>
       {/* REMOVE ORBIT CONTROLS TO FORCE THE CAMERA VIEW */}
       <OrbitControls />
-      <Scene>
-        
-      </Scene>
+        <Environment preset={'dawn'} background={true} />
+       
+          <Scene>
+            
+          </Scene>
+           
     </Canvas>
   );
 };

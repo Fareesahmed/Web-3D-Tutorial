@@ -84,3 +84,10 @@ npm run sandbox
    3. Modifying
    4. Unique capabilities
 
+#### Lighting
+
+1. more lights == slower performance
+2. use '-s' in gltfjsx transform
+3. add these properties to each light: castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-.0000001} in Model.jsx
+4. adjust intensity values and shadow-bias
+5. add castShadow receiveShadow to instance Merged tag in Model.jsx 
