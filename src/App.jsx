@@ -11,7 +11,7 @@ const Scene = () => {
             <Model />
       </Suspense>
       {/* REPLACE THIS LIGHT AS NEEDED IT'S A GOOD START */}
-      <ambientLight intensity={100}/>
+      <ambientLight intensity={1000}/>
     </>
   );
 };

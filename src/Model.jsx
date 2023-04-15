@@ -49,7 +49,7 @@ export function Model(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <directionalLight name="Sun" intensity={200} decay={2} position={[0, -0.91, 235.38]}>
+        <directionalLight name="Sun" intensity={400} decay={2} position={[0, -0.91, 235.38]}>
           <group position={[0, 0, -1]} />
         </directionalLight>
         <PerspectiveCamera name="Camera" makeDefault={true} far={100000} near={0.1} fov={22.9} position={[-465.25, -92.76, -467.37]} rotation={[2.94, -0.78, 3]} />
