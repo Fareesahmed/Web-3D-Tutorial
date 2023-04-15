@@ -88,6 +88,20 @@ npm run sandbox
 
 1. more lights == slower performance
 2. use '-s' in gltfjsx transform
+   1. include drei Instances if using -i
 3. add these properties to each light: castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-.0000001} in Model.jsx
 4. adjust intensity values and shadow-bias
 5. add castShadow receiveShadow to instance Merged tag in Model.jsx 
+
+#### Animating
+
+1. useFrame lerp https://medium.com/@zmommaerts/animate-a-camera-in-react-three-fiber-7398326dad5d
+2. Theater js https://www.theatrejs.com/
+3. useAnimations:
+   1. naming is everything!
+   2. NLA tracks are a pain
+   3. can group virtually
+   4. onClick interactions
+   5. play forward and backward. 
+4. Spring https:/docs.pmnd.rs/react-three-fiber/tutorials/using-with-react-spring
+5. Drei Animations
