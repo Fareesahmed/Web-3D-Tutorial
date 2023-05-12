@@ -17,6 +17,8 @@ body,
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
+  color: #fff;
+	background-color: #333;
 }
 
 #root {
@@ -28,6 +30,41 @@ body {
   overflow: hidden;
   overscroll-behavior-y: none;
   font-family: helvetica neue, helvetica, arial, sans-serif;
-  color: black;
   -webkit-font-smoothing: antialiased;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+figcaption {
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 8px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  color:aliceblue
 }
