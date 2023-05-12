@@ -24,7 +24,7 @@ const Home = () => {
                     alt="Mountain landscape"
                 />
             </a>
-          <figcaption>Low Poly Chinese Courtyard, Features: Material changes, Clouds, Camera moves</figcaption>
+          <figcaption>Low Poly Chinese Courtyard, Features: Instances, Material changes, Clouds, Camera moves</figcaption>
         </figure>
       </main>
     </>
