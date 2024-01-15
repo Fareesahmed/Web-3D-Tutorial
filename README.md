@@ -2,6 +2,8 @@
 
 _Blender to Web3D as fast as possible_
 
+I'M LEAVING THIS ONE HERE BUT I RECOMMEND STARTING HERE NOW: https://github.com/SuddenDevelopment/web3d
+
 ![Preview](/public/preview.png)
 
 This repo is meant to accompany a tutorial series on Youtube that starts here: https://youtu.be/1BvLpt7egss
